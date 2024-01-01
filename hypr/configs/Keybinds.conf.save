@@ -1,4 +1,4 @@
-## /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
+uuuuuuuuuuuuuuuuu## /* ---- 💫 https://github.com/JaKooLit 💫 ---- */  ##
 # Default Keybinds
 
 $mainMod = SUPER
@@ -12,8 +12,6 @@ bind = $mainMod, F, fullscreen
 bind = $mainMod, Q, killactive,
 bind = CTRL ALT, L, exec, $scriptsDir/LockScreen.sh
 bind = CTRL ALT, P, exec, $scriptsDir/Wlogout.sh
-
-bind = $mainMod, W, exec, $scriptsDir/Wallpaper.sh 
 
 # FEATURES / EXTRAS
 bind = $mainMod ALT, R, exec, $scriptsDir/Refresh.sh # Refresh waybar, swaync, rofi
