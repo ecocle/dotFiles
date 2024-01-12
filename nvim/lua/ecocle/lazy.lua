@@ -13,7 +13,7 @@ vim.opt.rtp:prepend(lazypath)
 
 require("lazy").setup({ { import = "ecocle.plugins" }, { import = "ecocle.plugins.lsp" } }, {
     install = {
-        colorscheme = { "nvim-purple" },
+        colorscheme = { "tokyonight" },
     },
     checker = {
         enabled = true,
