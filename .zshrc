@@ -10,6 +10,14 @@ fi
 
 # Path to your oh-my-zsh installation.
 export ZSH="$HOME/.oh-my-zsh"
+export PF_ASCII="Catppuccin"
+export PF_INFO="ascii title os host kernel uptime pkgs memory"
+export PF_COL1="2"
+export PF_COL3="3"
+
+export POWERLEVEL9K_MODE="powerline"
+
+export VISUAL="nvim"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -77,7 +85,10 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 # Custom plugins may be added to $ZSH_CUSTOM/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting)
+source ~/.zsh/catppuccin_mocha-zsh-syntax-highlighting.zsh
+plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search)
+
+unset HIST_STAMPS
 
 source $ZSH/oh-my-zsh.sh
 
@@ -107,11 +118,12 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-# aliases
-alias par="pulseaudio --kill && pulseaudio --start"
+alias ls='exa'
+
+export PATH=$PATH:/Users/ecocle/.spicetify
+
+cd ~
+pfetch
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-pfetch
-export PATH=$PATH:/home/ecocle/.spicetify

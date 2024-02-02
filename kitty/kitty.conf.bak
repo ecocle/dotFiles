@@ -1,0 +1,22 @@
+font_family    MesloLGS NF 
+font_size      14.0
+bold_font        auto
+italic_font      auto
+bold_italic_font auto
+
+cursor_shap block
+cursor_blink_interal 0 
+
+background_opacity 0.9
+
+confirm_os_window_close 0 
+
+enable_audio_bell 0
+
+hide_window_decorations yes
+
+tab_bar_min_tabs            1
+tab_bar_edge                bottom
+tab_bar_style               powerline
+tab_powerline_style         slanted
+tab_title_template          {title}{' :{}:'.format(num_windows) if num_windows > 1 else ''}
